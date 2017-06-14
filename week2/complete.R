@@ -21,5 +21,5 @@ complete <- function(directory, id = 1:332) {
   mat <- cbind(id, results)
   colnames(mat) <- c("id", "nobs")
   rownames(mat) <- 1:(ind - 1)
-  mat
+  as.data.frame(mat)
 }
