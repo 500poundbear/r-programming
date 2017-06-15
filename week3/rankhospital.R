@@ -43,7 +43,7 @@ rankhospital <- function(state, outcome, num = "best") {
   else if (identical(num, "worst")) { rank = num_results }
   else { rank = num }
   
-  ## TODO: Check if rank is valid
+  ## Check if rank is valid
   
   if (rank > num_results || rank <= 0) { stop("NA") }
   
